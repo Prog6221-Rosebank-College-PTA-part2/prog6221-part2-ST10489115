@@ -25,7 +25,8 @@ namespace Cyber_Awareness_Chat
         }
 
         // ─── WELCOME MESSAGE ─────────────────────────────────────
-        private void WelcomeMessage()
+        private void WelcomeMessage() // Method to display the welcome message in the chat box
+        {
         {
             chatBox.AppendText(
                 "=====================================\n" +
@@ -65,7 +66,7 @@ namespace Cyber_Awareness_Chat
         }
 
         // ─── ENTER KEY SUPPORT ───────────────────────────────────
-        private void inputBox_KeyDown(object sender, KeyEventArgs e)
+        private void inputBox_KeyDown(object sender, KeyEventArgs e) // Event handler for key press in the input box
         {
             if (e.KeyCode == Keys.Enter)
             {
@@ -120,7 +121,7 @@ namespace Cyber_Awareness_Chat
             }
 
             // ── MEMORY: recall name and interest ──────────────────
-            string storedName = memory.RecallMemory("name");
+            string storedName = memory.RecallMemory("name"); // Check if the user is telling the bot their name
             string storedInterest = memory.RecallMemory("interest");
 
             // ── SENTIMENT ANALYSIS ────────────────────────────────
