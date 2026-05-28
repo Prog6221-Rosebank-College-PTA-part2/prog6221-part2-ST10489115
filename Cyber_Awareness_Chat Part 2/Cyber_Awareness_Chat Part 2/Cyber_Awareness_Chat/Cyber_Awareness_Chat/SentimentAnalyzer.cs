@@ -31,7 +31,8 @@ namespace Cyber_Awareness_Chat
                 "want to know", "wondering", "can you"
             };
         }
-
+       // Checks user input for emotional keywords 
+     // returns the detected sentiments
         public string DetectSentiment(string input)
         {
             string lower = input.ToLower();
